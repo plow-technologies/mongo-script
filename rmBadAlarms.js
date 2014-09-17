@@ -16,7 +16,7 @@ alarm_joins = db.alarm_joins.find({"alarm_id" : ObjectId(alarmId)});
 alarms.forEach(printjson);
 alarms_joins.forEachf(printjson);
 
-// db.alarm.remove({"_id" : ObjectId(alarmId)});
-// db.alarm_joins.remove({"alarm_id" : ObjectId(alarmId)});
+db.alarm.remove({"_id" : ObjectId(alarmId)});
+db.alarm_joins.remove({"alarm_id" : ObjectId(alarmId)});
 
 };
